@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Questions } from './components/Questions/Questions';
 import { Prices } from './components/Pricing/Pricing';
+import Sound from './components/Sound/Sound';
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
 
       <Questions />
       <Prices />
+      <Sound />
 
     </div>
   );

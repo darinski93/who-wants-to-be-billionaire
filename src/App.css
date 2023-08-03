@@ -150,7 +150,6 @@ body {
 }
 
 
-
 .joker img{
   max-width: 100%;
   max-height: 100%;
@@ -165,3 +164,24 @@ body {
 
 
 
+
+
+
+
+
+
+
+/* SOUND BUTTON */
+
+.sound-container {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.play-button {
+  font-size: 18px; 
+  padding: 6px; 
+}
