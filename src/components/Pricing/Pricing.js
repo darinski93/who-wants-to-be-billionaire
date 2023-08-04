@@ -1,19 +1,19 @@
 export const Prices = () => {
 
     return (
-        <div class="pricing-box">
-            <div class="game-board">
-                <div class="joker-boxes">
-                    <div class="joker">
+        <div className="pricing-box">
+            <div className="game-board">
+                <div className="joker-boxes">
+                    <div className="joker">
                         <img src="./50-50.png" alt="50-50" /></div>
-                    <div class="joker">
+                    <div className="joker">
                         <img src="./Pomoshtotpriqtel.png" alt="Pomosht ot priqtel" />
                     </div>
-                    <div class="joker">
+                    <div className="joker">
                         <img src="./pomoshtotpublikata.png" alt="Pomosht ot publikata" />
                     </div>
                 </div>
-                <div class="numbers">
+                <div className="numbers">
                     <div><span>15</span>100 000</div>
                     <div><span>14</span>50 000</div>
                     <div><span>13</span>30 000</div>

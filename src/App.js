@@ -9,19 +9,20 @@ import Sound from './components/Sound/Sound';
 
 function App() {
 
-  const [question, setQuestions] = useState([])
+  const [questions, setQuestions] = useState([])
 
   useEffect(() => {
-    fetch('https://opentdb.com/api.php?amount=15')
+    fetch('https://opentdb.com/api.php?amount=15&type=multiple')
       .then((res) => res.json())
-      .then((data) => setQuestions(data))
+      .then((data) => setQuestions(data.results))
+      .catch((error) => console.log(error))
   }, [])
 
 
   return (
     <div className="App">
 
-      <Questions />
+      <Questions questions={questions} />
       <Prices />
       <Sound />
 
