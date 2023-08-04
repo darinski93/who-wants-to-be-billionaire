@@ -1,29 +1,22 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { QuestionsContext } from "../../Contexts/QuestionsContext";
 
-export const Questions = ({ questions }) => {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [gameOver, setGameOver] = useState(false)
+
+export const Questions = () => {
+
+    const { questions,
+        currentQuestion,
+        playAgain,
+        handleOptionsClick,
+        gameOver,
+    } = useContext(QuestionsContext)
+
 
     if (!questions || questions.length === 0) {
         return <div className="loading">Loading...</div>
     }
 
-    const currentQuestion = questions[currentIndex]
-
-    const handleOptionsClick = (selectedAnswer) => {
-        if (selectedAnswer === currentQuestion.correct_answer) {
-            setCurrentIndex((prevIndex) => prevIndex + 1)
-        } else {
-            setGameOver(true)
-        }
-    }
-
     const allAnswers = [...currentQuestion.incorrect_answers, currentQuestion.correct_answer,].sort(() => Math.random() - 0.5)
-
-    const playAgain = () => {
-        setCurrentIndex(0)
-        setGameOver(false)
-    }
 
     return (
         <div className="question-box">
