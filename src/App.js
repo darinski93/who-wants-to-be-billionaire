@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import { Questions } from './components/Questions/Questions';
 import { Prices } from './components/Pricing/Pricing';
 import Sound from './components/Sound/Sound';
@@ -18,8 +17,6 @@ function App() {
       .then((data) => setQuestions(data.results))
       .catch((error) => console.log(error))
   }, [])
-
-  
 
   const currentQuestion = questions[currentIndex]
 
@@ -53,9 +50,10 @@ function App() {
 
         <Questions />
         <Prices />
-        <Sound />
-
       </QuestionsContext.Provider>
+      <Sound />
+
+
 
     </div>
   );

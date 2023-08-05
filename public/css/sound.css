@@ -1,0 +1,14 @@
+
+.sound-container {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .play-button {
+    font-size: 18px; 
+    padding: 6px; 
+    cursor: pointer;
+  }

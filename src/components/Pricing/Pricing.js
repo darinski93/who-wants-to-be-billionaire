@@ -5,7 +5,7 @@ import { QuestionsContext } from "../../Contexts/QuestionsContext";
 export const Prices = () => {
 
     const { currentIndex, gameOver, playAgain } = useContext(QuestionsContext)
-    
+
 
     const backgroundChanger = (index) => {
         if (gameOver) {
@@ -25,12 +25,12 @@ export const Prices = () => {
                 <div className="game-board">
                     <div className="joker-boxes">
                         <div className="joker">
-                            <img src="./50-50.png" alt="50-50" /></div>
+                            <img src="./img/50-50.png" alt="50-50" /></div>
                         <div className="joker">
-                            <img src="./Pomoshtotpriqtel.png" alt="Pomosht ot priqtel" />
+                            <img src="./img/Pomoshtotpriqtel.png" alt="Pomosht ot priqtel" />
                         </div>
                         <div className="joker">
-                            <img src="./pomoshtotpublikata.png" alt="Pomosht ot publikata" />
+                            <img src="./img/pomoshtotpublikata.png" alt="Pomosht ot publikata" />
                         </div>
                     </div>
                     <div className="prices">

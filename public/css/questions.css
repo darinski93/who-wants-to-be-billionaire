@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/043/553/780/large/giovanny-gomez-millonario.jpg?1637608959');
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .question-box {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 50px ;
+  }
+  
+  .question-text {
+    border: 4px solid #38569c;
+    border-radius: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    background-color: black;
+  }
+  
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  
+  .answer-box {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    margin: 10px;
+    border-radius: 2rem;
+    border: 4px solid #38569c;
+    width: calc(40% - 2px);
+    background-color: black;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .answer-box:hover {
+    background-color: orange;
+  }
+  
+  .letter {
+    margin-right: 5px;
+    font-size: 22px;
+    color: gold;
+    font-weight: bold;
+  }
+
+  .loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgb(244, 244, 244);
+    text-align: center;
+  }
+
+  .game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    text-transform: uppercase;
+    width: 400px;
+  }
+  
+  .play-again{
+    color: white;
+    font-size: 24px;
+    background-color: #0f0e0e;
+    border: 4px solid #38569c;
+    cursor: pointer;
+    width: 300px;
+  }
